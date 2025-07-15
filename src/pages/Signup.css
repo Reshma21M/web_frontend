@@ -1,0 +1,63 @@
+.Signup{
+    width: 100%;
+    height: 110vh;
+    background: #ededed;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.Signup-container{
+    width: 580px;
+    height: 600px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+.Signup-container h1{
+    margin: 10px 0px;
+}
+.Signup-fields{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 29px;
+}
+.Signup-fields input{
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+.Signup-container button{
+    width: 580px;
+    height: 72px;
+    color: white;
+    background: tomato;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Signup-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Signup-login span{
+    color: tomato;
+    font-weight: 600;
+    cursor: pointer;
+}
+.Signuplogin-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
