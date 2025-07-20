@@ -12,29 +12,36 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-form{
+.login-container form{
     background: white;
     padding: 32px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0 0 0 0.1);
-    width: 360px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
     text-align: center;
 }
-h2{
-    font-size: 22px;
+.login-container h2{
     font-weight: 700;
     margin-bottom: 35px;
     font-size: 24px;
     margin-top: 10px;
+    color: #1e293b;
 }
-input{
+.login-container input{
     width: 100%;
     padding: 12px 16px;
     margin: 10px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
+    transition: 0.3s;
 }
-p{
+.login-container input:focus{
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+.login-container p{
     margin-top: 20px;
     font-size: 12px;
     color: #5d5c5c;
@@ -44,13 +51,16 @@ p a{
     text-decoration: none;
     color: #2563eb;
 }
+p a:hover{
+    text-decoration: underline;
+}
 .options{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 13px;
     margin: 12px 0 20px;
-    color: #333;
+    color: #475569;
 }
 .options label{
     display: flex;
@@ -63,19 +73,21 @@ p a{
     text-decoration: none;
     color: #2563eb;
 }
+.options a:hover{
+    text-decoration: underline;
+}
 .primary{
-    background: #3b82f6;
+    background: #2563eb;
     color: white;
     border: none;
-    padding: 8px;
+    padding: 12px;
     border-radius: 8px;
     width: 100%;
     margin-top: 20px;
-    height: 38px;
     cursor: pointer;
 }
 .primary:hover{
-    background: #2563eb;
+    background: #1d4ed8;
 }
 .google{
     background: white;
@@ -88,7 +100,6 @@ p a{
     justify-content: center;
     gap: 8px;
     margin-top: 18px;
-    height: 38px;
     cursor: pointer;
 }
 .google:hover{

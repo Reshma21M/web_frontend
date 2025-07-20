@@ -15,10 +15,12 @@ const Signup = () => {
                 <label>Confirm Password</label>
                 <input type="password" name="confirmPassword" placeholder="Confirm your password" required/>
                 <div className="checkbox-container">
-                    <input type="checkbox" name="agreed" required />
-                    <span>
-                        I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a>
-                    </span>
+                    <label>
+                        <input type="checkbox" name="agreed" required />
+                        <span>
+                            I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a>
+                        </span>
+                    </label>
                 </div>
                 <button type="submit">Create Account</button>
                 <p className="login">
