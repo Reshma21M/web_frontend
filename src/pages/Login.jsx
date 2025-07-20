@@ -12,9 +12,9 @@ const Login = () => {
                     <label>
                         <input type="checkbox" />Remember for 30 days
                     </label>
-                    <a href="#">Forgot Password</a>
+                    <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" className="primary">Sign Up</button>
+                <button type="submit" className="primary">Sign in</button>
                 <button type="button" className="google">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="google icon" className="google-icon" />
                     Sign in with Google
