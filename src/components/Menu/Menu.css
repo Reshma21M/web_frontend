@@ -14,6 +14,7 @@
     color: #808080;
 }
 .menu-list{
+    padding-right: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,4 +25,38 @@
 }
 .menu-list::-webkit-scrollbar{
     display: none;
+}
+.menu-list-item img{
+    width: 150px;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.menu-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(20px,16px);
+    cursor: pointer;
+}
+.menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
+@media (max-width:1050px){
+    .menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .menu-list{
+        padding-right: 50px;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    .menu-list-item img{
+        width: 50px;
+    }
+    .menu-list-item p{
+        font-size: max(10px,6px);
+    }
 }
