@@ -1,0 +1,27 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.menu h1{
+    color: #262626;
+    font-weight: 500;
+}
+.menu-text{
+    max-width: 90%;
+    color: #808080;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow: scroll;
+}
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
