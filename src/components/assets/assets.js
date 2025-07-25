@@ -90,7 +90,7 @@ export const menu_list = [
             id: "1",
             name: "Blue Berry Cake",
             image: cake_1,
-            price: 12,
+            price: 1200,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cakes"
         },
@@ -98,77 +98,77 @@ export const menu_list = [
             id: "2",
             name: "Coconut Cake",
             image: cake_2,
-            price: 18,
+            price: 1800,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cakes"
         }, {
             id: "3",
             name: "Vegan Palm Cake",
             image: cake_3,
-            price: 16,
+            price: 1600,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cakes"
         }, {
             id: "4",
             name: "Chocolate Cake",
             image: cake_4,
-            price: 24,
+            price: 2400,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cakes"
         }, {
             id: "5",
             name: "Wedding Cake",
             image: cake_5,
-            price: 14,
+            price: 1400,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Celebration Cakes"
         }, {
             id: "6",
             name: "Christmas Cake",
             image: cake_6,
-            price: 12,
+            price: 1200,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Celebration Cakes"
         }, {
             id: "7",
             name: "Birthday Cake ",
             image: cake_7,
-            price: 20,
+            price: 2000,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Celebration Cakes"
         }, {
             id: "8",
             name: "Annivesary Cake",
             image: cake_8,
-            price: 15,
+            price: 1500,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Celebration Cakes"
         }, {
             id: "9",
             name: "Choco Cup Cake",
             image: cake_9,
-            price: 14,
+            price: 140,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cup Cakes"
         }, {
             id: "10",
             name: "Banana Cup Cake",
             image: cake_10,
-            price: 22,
+            price: 220,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cup Cakes"
         }, {
             id: "11",
             name: "Mango Cup Cake",
             image: cake_11,
-            price: 10,
+            price: 100,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cup Cakes"
         }, {
             id: "12",
             name: "Lemon Cup Cake",
             image: cake_12,
-            price: 12,
+            price: 120,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Cup Cakes"
         },
@@ -176,7 +176,7 @@ export const menu_list = [
             id: "13",
             name: "Stawberry Swiss Roll",
             image: cake_13,
-            price: 12,
+            price: 920,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Roll Cakes"
         },
@@ -184,56 +184,56 @@ export const menu_list = [
             id: "14",
             name: "Chocolate Swiss Roll",
             image: cake_14,
-            price: 18,
+            price: 1000,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Roll Cakes"
         }, {
             id: "15",
             name: "Cherry Chocolate Swiss Roll",
             image: cake_15,
-            price: 16,
+            price: 990,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Roll Cakes"
         }, {
             id: "16",
             name: "Orange Flavoured Swiss Roll",
             image: cake_16,
-            price: 24,
+            price: 990,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Roll Cakes"
         }, {
             id: "17",
             name: "Strawberry Cake",
             image: cake_17,
-            price: 14,
+            price: 1400,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Dessert Cakes"
         }, {
             id: "18",
             name: "Brownie Cake Plate",
             image: cake_18,
-            price: 12,
+            price: 1200,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Dessert Cakes"
         }, {
             id: "19",
             name: "Tiramisu Italy Cake",
             image: cake_19,
-            price: 20,
+            price: 2000,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Dessert Cakes"
         }, {
             id: "20",
             name: "Carrot Vegan Cake",
             image: cake_20,
-            price: 15,
+            price: 1500,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Dessert Cakes"
         }, {
             id: "21",
             name: "Bento Cake ",
             image: cake_21,
-            price: 14,
+            price: 1400,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Bento Cakes"
         }, {
@@ -247,14 +247,14 @@ export const menu_list = [
             id: "23",
             name: "Bento Cake",
             image: cake_23,
-            price: 10,
+            price: 1000,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Bento Cakes"
         }, {
             id: "24",
             name: "Bento Cake",
             image: cake_24,
-            price: 12,
+            price: 1200,
             description: "Cakes bring joy and sweetness to every celebration, creating moments to cherish",
             category: "Bento Cakes"
         }

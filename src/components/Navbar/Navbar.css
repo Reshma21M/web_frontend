@@ -18,6 +18,10 @@
     font-size: 20px;
     font-weight: 500;
 }
+.navbar-menu a {
+  text-decoration: none;
+  color: #49557e;
+}
 .navbar-right{
     display: flex;
     align-items: center;
@@ -40,17 +44,15 @@
     padding-bottom: 2px;
     border-bottom: 2px solid #49557e;
 }
-.navbar-search{
-    position: relative;
-}
+
 .navbar-search .dot{
     position: absolute;
-    min-width: 8px;
-    min-height: 8px;
+    min-width: 6px;
+    min-height: 6px;
     background-color: tomato;
     border-radius: 5px;
-    top: 4px;
-    right:4px;
+    top: 95px;
+    right:275px;
 }
 @media (max-width:1050px){
     .navbar .logo{

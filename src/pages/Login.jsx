@@ -3,6 +3,7 @@ import './Login.css'
 
 const Login = () => {
     return (
+        <div className="login">
         <div className="login-container">
             <form >
                 <h2>Welcome Back</h2>
@@ -19,8 +20,9 @@ const Login = () => {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="google icon" className="google-icon" />
                     Sign in with Google
                 </button>
-                <p>Don't have an account? <a href="#">Sign Up</a></p>
+                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
             </form>
+        </div>
         </div>
     );
 }

@@ -26,7 +26,7 @@ const CakeItem = ({id,name,price,description,image}) => {
                     <img src={assets.rating_starts} alt='' />
                 </div>
                 <p className='cake-item-desc'>{description}</p>
-                <p className='cake-item-price'>${price}</p>
+                <p className='cake-item-price'>LKR {price}</p>
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import './Signup.css'
 
 const Signup = () => {
     return(
+        <div className="signup">
         <div className="signup-container">
             <form className="signup-form">
                 <h2>Create Account</h2>
@@ -27,6 +28,7 @@ const Signup = () => {
                     Already have an account? <a href="#">Sign in</a>
                 </p>
             </form>
+        </div>
         </div>
     );
 }
