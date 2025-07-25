@@ -5,15 +5,18 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
+import StoreContextProvider from './context/StoreContext';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-        </Routes>
+        <StoreContextProvider>
+        <Navbar />
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+          </Routes>
+        </StoreContextProvider>
       </BrowserRouter>
     </div>
   );

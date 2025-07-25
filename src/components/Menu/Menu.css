@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 .menu h1{
     color: #262626;
@@ -46,7 +46,7 @@
     padding: 2px;
 }
 .menu hr{
-    margin: 10px 180px;
+    margin: 10px 10px;
     height: 2px;
     background-color: #e2e2e2;
     border: none;
