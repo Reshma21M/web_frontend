@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import StoreContextProvider from './context/StoreContext';
 import Footer from './components/Footer/Footer';
+import Cart from './pages/Cart';
+import PlaceOrder from './pages/PlaceOrder';
 
 function App() {
   return (
@@ -17,6 +16,8 @@ function App() {
         <Navbar />
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/order' element={<PlaceOrder/>}/>
           </Routes>
         </StoreContextProvider>
       </BrowserRouter>
@@ -25,5 +26,6 @@ function App() {
     </> 
   );
 }
+
 
 export default App;
