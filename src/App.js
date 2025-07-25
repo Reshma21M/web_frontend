@@ -6,9 +6,11 @@ import Signup from './pages/Signup';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import StoreContextProvider from './context/StoreContext';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
+   <>
     <div>
       <BrowserRouter>
         <StoreContextProvider>
@@ -19,6 +21,8 @@ function App() {
         </StoreContextProvider>
       </BrowserRouter>
     </div>
+    <Footer />
+    </> 
   );
 }
 

@@ -38,6 +38,11 @@ import remove_icon_red from './remove_icon_red.png'
 import rating_starts from './rating_starts.png'
 import app_store from './app_store.png'
 import play_store from './play_store.png'
+import linkedin_icon from './linkedin_icon.png'
+import facebook_icon from './facebook_icon.png'
+import twitter_icon from './twitter_icon.png'
+import logo2 from './logo2.png'
+
 
 export const assets = {
     search,
@@ -49,7 +54,11 @@ export const assets = {
     remove_icon_red,
     rating_starts,
     app_store,
-    play_store
+    play_store,
+    linkedin_icon,
+    facebook_icon,
+    twitter_icon,
+    logo2
 }
 export const menu_list = [
      {
