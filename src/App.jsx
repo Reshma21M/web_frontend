@@ -7,26 +7,31 @@ import Cart from './pages/Cart';
 import PlaceOrder from './pages/PlaceOrder';
 import Login from './pages/Login';
 import StoreContextProvider from './context/StoreContext';
+import {ToastContainer} from 'react-toastify'
 
 import React from 'react';
-import Signup from './pages/Signup';
+import EmailVerify from './pages/EmailVerify';
+import ResetPassword from './pages/ResetPassword';
+import { AppContextprovider } from './context/AppContext';
 
 const AppLayout = () => {
   const location = useLocation();
 
-  const hideLayoutRoutes = ['/login','/signup'];
+  const hideLayoutRoutes = ['/login', '/email-verify', '/reset-password'];
 
   const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
   return (
     <>
       {!shouldHideLayout && <Navbar />}
+      <ToastContainer/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<PlaceOrder />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/email-verify" element={<EmailVerify />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
       {!shouldHideLayout && <Footer />}
     </>
@@ -36,9 +41,11 @@ const AppLayout = () => {
 function App() {
   return (
     <BrowserRouter>
-      <StoreContextProvider>
-        <AppLayout />
-      </StoreContextProvider>
+      <AppContextprovider>
+        <StoreContextProvider>
+          <AppLayout />
+        </StoreContextProvider>
+      </AppContextprovider>
     </BrowserRouter>
   );
 }
