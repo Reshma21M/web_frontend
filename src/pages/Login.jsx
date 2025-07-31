@@ -10,23 +10,25 @@ const Login = () => {
 
     const navigate = useNavigate()
 
-    const {backendUrl, setIsLoggedIn} = useContext(AppContext)
+    const {backendUrl, setIsLoggedIn, getUserData} = useContext(AppContext)
 
     const [state, setState] = useState('Sign Up')
-    const [username, setName] = useState('')
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const onSubmitHandler = async (e) => {
+        console.log()
         try{
             e.preventDefault();
 
             axios.defaults.withCredentials = true
 
             if(state === 'Sign Up'){
-                const {data} = await axios.post(backendUrl + '/api/auth/register', {username, email, password})
+                const {data} = await axios.post(`${backendUrl}/api/auth/register`, { name, email, password })
                 if(data.success){
                     setIsLoggedIn(true)
+                    getUserData()
                     navigate('/')
                 }else{
                     toast.error(data.message)
@@ -35,6 +37,7 @@ const Login = () => {
                 const {data} = await axios.post(`${backendUrl}/api/auth/login`, { email, password })
                 if(data.success){
                     setIsLoggedIn(true)
+                    getUserData()
                     navigate('/')
                 }else{
                     toast.error(data.message)
@@ -55,9 +58,9 @@ const Login = () => {
                 {state === 'Sign Up' && (
                     <input type="text" 
                         onChange={e => setName(e.target.value)} 
-                        value={username} 
-                        name="username" 
-                        placeholder="Enter a username" required/>
+                        value={name} 
+                        name="name" 
+                        placeholder="Enter Name" required/>
                 )}
                 
                     <input type="email" 
