@@ -37,8 +37,12 @@ const Login = () => {
                 const {data} = await axios.post(`${backendUrl}/api/auth/login`, { email, password })
                 if(data.success){
                     setIsLoggedIn(true)
-                    getUserData()
-                    navigate('/')
+                    await getUserData()
+                    if(email === 'thasuniinduma@gmail.com'){
+                        navigate('/admin')
+                    }else{
+                        navigate('/')
+                    }
                 }else{
                     toast.error(data.message)
                 }

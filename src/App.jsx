@@ -8,6 +8,7 @@ import PlaceOrder from './pages/PlaceOrder';
 import Login from './pages/Login';
 import StoreContextProvider from './context/StoreContext';
 import {ToastContainer} from 'react-toastify'
+import AdminView from './pages/AdminView';
 
 import React, { useContext } from 'react';
 import EmailVerify from './pages/EmailVerify';
@@ -19,7 +20,7 @@ const AppLayout = () => {
 
   const {isLoggedIn} = useContext(AppContext)
 
-  const hideLayoutRoutes = ['/login', '/email-verify', '/reset-password'];
+  const hideLayoutRoutes = ['/login', '/email-verify', '/reset-password', '/admin'];
 
   const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
@@ -37,6 +38,7 @@ const AppLayout = () => {
           isLoggedIn ? <PlaceOrder />
           :<Navigate to="/login" replace/>
         } />
+        <Route path="/admin" element={<AdminView/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/email-verify" element={<EmailVerify />} />
         <Route path="/reset-password" element={<ResetPassword />} />

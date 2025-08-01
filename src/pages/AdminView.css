@@ -1,0 +1,133 @@
+.admin-view {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-view button {
+  cursor: pointer;
+  padding: 8px 14px;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-view button:hover {
+  background-color: #1e40af;
+}
+
+.admin-view h1 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.admin-view h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.cake-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cake-form input,
+.cake-form select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  flex: 1 1 150px;
+  min-width: 150px;
+  font-size: 16px;
+}
+
+.cake-form button {
+  flex: 0 0 auto;
+}
+
+.cake-form img.preview-image {
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: #e0e7ff;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+tr:hover {
+  background-color: #f3f4f6;
+}
+
+td button {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cake-image {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.no-image-placeholder {
+  width: 80px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 60px;
+  color: #888;
+  font-size: 14px;
+}
+
+.edit-image-preview {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 5px;
+  display: block;
+}
