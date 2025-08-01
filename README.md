@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 🎂 Cakely Frontend – React-Based Cake Ordering Platform
+![Cakely Logo](./images/logo4.png) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚀 Project Overview
 
-In the project directory, you can run:
+Welcome to **Cakely!** 🍰 This is the **frontend** of a modern cake ordering platform, offering a smooth and delightful user experience. Customers can browse cakes, register, login, reset passwords, and manage profiles, while admins get dedicated access to manage platform content.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**
+- **React Router DOM** for navigation
+- **Axios** for API calls
+- **React Toastify** for notifications
+- **CSS3 & Flexbox/Grid** for styling and responsive layouts
+- **ESLint & Prettier** for code quality and formatting
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Screenshots
 
-### `npm run build`
+## 🖥️ Web View
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<table>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>1. Home View</h4>
+      <img src="./images/img1.png" alt="Home View" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>Responsive home page with featured cakes and navigation.</p>
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>2. Login Page</h4>
+      <img src="./images/img7.png" alt="Login Page" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>User-friendly login form with validation and error messages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>3. Registration Page</h4>
+      <img src="./images/img8.png" alt="Registration Page" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>Simple signup form with email verification flow.</p>
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>4. Cake Listing</h4>
+      <img src="./images/img3.png" alt="Cake Listing" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>Browse various cakes with images and prices.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>5. Admin View</h4>
+      <img src="./images/img17.png" alt="Admin View" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>Admin dashboard to manage users, cakes, and orders efficiently.</p>
+    </td>
+    <td style="width: 50%; vertical-align: top; padding: 10px; box-sizing: border-box;">
+      <h4>6. Reset Password</h4>
+      <img src="./images/img10.png" alt="Reset Password" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; display: block; margin-bottom: 8px;" />
+      <p>Secure password reset functionality for forgotten credentials.</p>
+    </td>
+  </tr>
+</table>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Setup Instructions
 
-### `npm run eject`
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/yourusername/cakely-frontend.git
+   cd cakely-frontend
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies 
+   ```bash
+   npm install
+   
+   ```
+   
+4. Set Up Environment Variables
+   ```bash
+   REACT_APP_BACKEND_URL=http://localhost:4000
+     
+   ```
+   
+3. Run the development server
+   ```bash
+   npm run dev
+   
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Visit on Browser
+   ```
+   http://localhost:3000
+   
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👩‍💻 Project Team & Contributions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔗 API & Backend
 
-## Learn More
+```bash
+http://localhost:8080/swagger-ui/index.html
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📌 Folder Structure (Brief)
 
-### Code Splitting
+```
+web_frontend/
+├── node_modules
+├── public
+├── src
+│ ├── components
+│ ├── context
+│ ├── pages
+│ ├── CSS
+│ │ ├── App.css
+│ │ └── index.css
+│ ├── App.jsx
+│ ├── App.test.js
+│ ├── index.js
+│ ├── logo.svg
+│ ├── reportWebVitals.js 
+│ └── setupTests.js
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔗 Backend Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Backend Repository:** [Cakely Backend](https://github.com/ThasuniInduma/web_backend)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Thank You for Exploring Cakely! 🚀 Happy coding & happy cake craving! 🎂🍰🧁
