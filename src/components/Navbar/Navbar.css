@@ -54,6 +54,64 @@
     top: 95px;
     right:275px;
 }
+.profile {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background: rgb(184, 58, 111);
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    color: black;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.profile:hover .hover {
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+.hover ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.hover li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.hover li:last-child {
+  border-bottom: none;
+}
+
+.hover li:hover {
+  background-color: #f2f2f2;
+}
+
 @media (max-width:1050px){
     .navbar .logo{
         width: 200px;

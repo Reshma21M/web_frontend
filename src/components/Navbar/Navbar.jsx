@@ -2,12 +2,29 @@ import React, { useContext, useState } from "react"
 import './Navbar.css'
 import { assets } from "../assets/assets"
 import { StoreContext } from "../../context/StoreContext"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Login from "../../pages/Login"
+import { AppContext } from "../../context/AppContext"
+import axios from "axios"
+import { toast } from "react-toastify"
 
 const Navbar = () => {
     const [menu, setMenu] = useState("home")
     const {getTotalCartAmount} = useContext(StoreContext)
+
+    const navigate = useNavigate()
+    const {userData, backendUrl, setUserData, setIsLoggedIn} = useContext(AppContext)
+    
+    const logout = async () => {
+        try {
+            axios.defaults.withCredentials = true
+            const {data} = await axios.post(`${backendUrl}/api/auth/logout` )
+            data.success && setIsLoggedIn(false)
+            data.success && setUserData(false)
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
 
     return(
         <div className="navbar">
@@ -23,9 +40,22 @@ const Navbar = () => {
                     <Link to='/cart'>< img src={assets.bascket} alt=""/></Link>
                     <div className={getTotalCartAmount()===0?"":"dot"}></div>
                 </div>
-                <Link to="/login">
-                    <button>Sign Up</button>
-                </Link>
+                {userData ?
+                <div className="profile">
+                    {userData.name[0].toUpperCase()}
+                    <div className="hover">
+                        <ul>
+                            {!userData.isAccountVerified && 
+                                <li>Verify Email</li>
+                            }
+                            <li onClick={logout}>Logout</li>
+                        </ul>
+                    </div>
+                </div>
+                : <button onClick={()=>navigate('/login')}>Sign Up</button>
+                }
+                    
+                
             </div>
         </div>
     )
