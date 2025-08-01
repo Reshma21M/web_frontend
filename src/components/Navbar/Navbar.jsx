@@ -67,7 +67,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-                : <button onClick={()=>navigate('/login')}>Sign Up</button>
+                : <button onClick={()=>navigate('/login')}>Sign In</button>
                 }
                     
                 
