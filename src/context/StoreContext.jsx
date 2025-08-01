@@ -1,13 +1,23 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { cake_list } from "../components/assets/assets";
+import { AppContext } from "./AppContext";
+import { useNavigate } from "react-router-dom";
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) =>{
 
+    const {isLoggedIn} = useContext(AppContext)
     const [cartItems, setCartItems] = useState({});
+    const navigate = useNavigate()
 
     const addToCart = (itemId) => {
+
+        if(!isLoggedIn){
+            navigate("/login");
+            return;
+        }
+
         if(!cartItems[itemId]){
             setCartItems((prev)=>({...prev,[itemId]:1}))
         }
