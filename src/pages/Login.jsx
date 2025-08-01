@@ -52,7 +52,9 @@ const Login = () => {
     return (
         <div className="login">
         <div className="login-container">
-            <img src={assets.logo2} onClick={() => navigate('/')} alt="" />
+            <div className="image-container">
+                <img src={assets.h2} alt="" />
+            </div>
             <form onSubmit={onSubmitHandler}>
                 <h2>{state === 'Sign Up' ? 'Create Account' : 'Welcome Back'}</h2>
                 {state === 'Sign Up' && (

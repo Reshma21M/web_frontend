@@ -4,10 +4,11 @@
     padding: 10px;
     box-shadow: 0 1px 3px -2px black; 
     align-items: center;
+    height: 100px;
 }
 .navbar .logo{
-    width: 200px;
-    margin-left: -40px;
+    width: 130px;
+    margin-left: -30px;
 }
 .navbar-menu{
     display: flex;

@@ -42,7 +42,8 @@ import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
 import logo2 from './logo2.png'
-
+import h1 from './h1.png'
+import h2 from './h2.png'
 
 export const assets = {
     search,
@@ -58,7 +59,9 @@ export const assets = {
     linkedin_icon,
     facebook_icon,
     twitter_icon,
-    logo2
+    logo2,
+    h1,
+    h2
 }
 export const menu_list = [
      {

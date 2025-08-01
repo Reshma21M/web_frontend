@@ -6,24 +6,45 @@
 body{
     background: #f5f7fa;
 }
-.login-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e9ed;
 }
-.login-container img{
-    width: 100px;
+
+.login-container {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
 }
-.login-container form{
-    background: white;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 360px;
-    text-align: center;
+
+.login-container .image-container {
+  width: 60%;
+  height: 100%;
+}
+
+.login-container .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-container form {
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .login-container h2{
     font-weight: 700;
@@ -50,6 +71,11 @@ body{
     font-size: 12px;
     color: #5d5c5c;
     font-weight: 400
+}
+.login-container img {
+  width: 120px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 .text-blue{
     text-decoration: none;
