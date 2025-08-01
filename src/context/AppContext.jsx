@@ -6,6 +6,8 @@ export const AppContext = createContext()
 
 export const AppContextprovider = (props) => {
 
+    axios.defaults.withCredentials = true
+
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [userData, setUserData] = useState(false)
