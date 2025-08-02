@@ -7,7 +7,7 @@ const Header = () => {
     return(
         <div className="header">
             <div className="header-contents">
-                <h2>Hello {userData?userData.name:'Developer'}!</h2>
+                <h2>Hello {userData?userData.name:'User'}!</h2>
                 <h2>Order Your Favorite Cake</h2>
                 <p>Welcome to Cake Shop! Irresistible cakes, freshly baked to delight every celebration and craving</p>
                 <button>Order Now</button>
