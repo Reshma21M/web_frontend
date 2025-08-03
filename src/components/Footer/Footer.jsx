@@ -20,7 +20,7 @@ const Footer = () => {
                 <ul>
                     <li>Home</li>
                     <li>About us</li>
-                    <li>Delivery</li>
+                    <li>Order</li>
                     <li>Privacy policy</li>
                 </ul>
                 </div>
@@ -28,12 +28,12 @@ const Footer = () => {
                 <h2>GET IN TOUCH</h2>
                 <ul>
                     <li>+1-212-456-7890</li>
-                    <li>contact@spencer.com</li>
+                    <li>contact@cakely.com</li>
                 </ul>
                 </div>
                 </div>
                 <hr />
-                <p className='footer-copyright'>&copy; 2025 SPENCER FoodDelivery | All rights reserved.</p>
+                <p className='footer-copyright'>&copy; 2025 Cakely | All rights reserved.</p>
         </div>
     )
 }
