@@ -3,7 +3,6 @@ import './Navbar.css'
 import { assets } from "../assets/assets"
 import { StoreContext } from "../../context/StoreContext"
 import { Link, useNavigate } from "react-router-dom"
-import Login from "../../pages/Login"
 import { AppContext } from "../../context/AppContext"
 import axios from "axios"
 import { toast } from "react-toastify"

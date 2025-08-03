@@ -1,52 +1,51 @@
-import { createContext, useEffect, useState } from "react";
-import axios from 'axios';
-import {toast} from 'react-toastify';
+import { createContext, useEffect, useState, useCallback } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
-export const AppContext = createContext()
+export const AppContext = createContext();
 
 export const AppContextprovider = (props) => {
+    axios.defaults.withCredentials = true;
 
-    axios.defaults.withCredentials = true
+    const backendUrl = process.env.REACT_APP_BACKEND_URL; 
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [userData, setUserData] = useState(false);
 
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
-    const [userData, setUserData] = useState(false)
-
-    const getAuthState = async () => {
+    const getUserData = useCallback(async () => {
         try {
-            const {data} = await axios.get(`${backendUrl}/api/auth/is-auth`)
-            if(data.success){
-                setIsLoggedIn(true)
-                getUserData()
+            const { data } = await axios.get(`${backendUrl}/api/user/data`, { withCredentials: true });
+            data.success ? setUserData(data.userData) : toast.error(data.message);
+        } catch (error) {
+            toast.error(error.message);
+        }
+    }, [backendUrl]);
+
+    const getAuthState = useCallback(async () => {
+        try {
+            const { data } = await axios.get(`${backendUrl}/api/auth/is-auth`, { withCredentials: true });
+            if (data.success) {
+                setIsLoggedIn(true);
+                getUserData();
             }
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.message);
         }
-    }
-
-    const getUserData = async () => {
-        try {
-            const {data} = await axios.get(`${backendUrl}/api/user/data`)
-            data.success ? setUserData(data.userData) : toast.error(data.message)
-        } catch (error) {
-            toast.error(error.message)
-        }
-    }
+    }, [backendUrl, getUserData]);
 
     useEffect(() => {
         getAuthState();
-    }, [])
+    }, [getAuthState]);
 
     const value = {
         backendUrl,
         isLoggedIn, setIsLoggedIn,
         userData, setUserData,
         getUserData
-    }
+    };
 
-    return(
+    return (
         <AppContext.Provider value={value}>
             {props.children}
         </AppContext.Provider>
-    )
-}
+    );
+};
